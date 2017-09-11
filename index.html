@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <style>
+    .clicker {
+      border: 1px solid black;
+      height: 200px;
+      width: 100%;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .row{
+      margin-top: 30px;
+      margin-bottom: 30px
+    }
+  </style>
+</head>
+
+<title>Clicker</title>
+
+<body>
+  <div class="container">
+    <div class="starter-template">
+      <div class="row">
+        <div class="col">
+          <h1>Clicker</h1>
+          <p class="lead">Click in the box as fast as you can!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="start-button" type="button" class="btn btn-primary" onclick="start()">Start</button>
+          &nbsp;
+          <span id="message"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="clicker" onclick="clicker()"></div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <div id="chart" style="width:100%; height:400px;"></div>
+          </div>
+        </div>
+      </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.14/highcharts.js" crossorigin="anonymous"></script>
+    <script src="clicker.js"></script>
+
+</body>
+
+</html>
